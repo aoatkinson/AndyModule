@@ -20,7 +20,7 @@ PS > Send-File c:\temp\test.exe c:\temp\test.exe $session
 
 #>
 
-function Send-Fillle {
+function wwwwaddddup {
 
     param(
         ## The path on the local computer
@@ -398,7 +398,7 @@ function Start-DemoModule {
     }
 }
 
-function Stop-DemooooModule {
+function Stop-DemoModule {
     # clean-up Azure resources
     Param (        [Parameter(Mandatory=$true)][string]$Name    )
 
