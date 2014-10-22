@@ -398,7 +398,7 @@ function Start-DemoModule {
     }
 }
 
-function Stop-DemooModule {
+function Stop-DemooooModule {
     # clean-up Azure resources
     Param (        [Parameter(Mandatory=$true)][string]$Name    )
 
