@@ -195,8 +195,7 @@ function Show-DemoWebsite {
 }
 
 function Connect-DemoModule {
-    Param (        [Parameter(Mandatory=$true)][string]$Name    )
-    if ($script:DemoModuleState.ContainsKey($Name.ToLower())) {
+    Param (        [Parameter(Mandatory=$true)][string]$Name    )    if ($script:DemoModuleState.ContainsKey($Name.ToLower())) {
         $deploymentData = $script:DemoModuleState[$Name.ToLower()].DeploymentData
         $rdpPath = "{0}\AppData\DemoModule\{1}.rdp" -f $env:USERPROFILE,$Name
         $rdp = Get-AzureRemoteDesktopFile -ServiceName $deploymentData.ServiceName -Name $deploymentData.VMName -LocalPath $rdpPath
@@ -399,7 +398,7 @@ function Start-DemoModule {
     }
 }
 
-function Stop-DemoooModule {
+function Stop-DemoModule {
     # clean-up Azure resources
     Param (        [Parameter(Mandatory=$true)][string]$Name    )
 
